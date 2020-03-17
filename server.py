@@ -109,12 +109,13 @@ class GetHandler(BaseHTTPRequestHandler):
         user=Usuario()
         global users_list
         global ip_list
-        print(users_list)
         ip_list=[]
         while True:
             listas=user.getUsers()
             users_list=listas[0]
             ip_list=listas[1]
+            print(users_list)
+
             time.sleep(2)
     hilo_usuarios=threading.Thread(target=update_Users, daemon=True)
     hilo_usuarios.start()

@@ -109,7 +109,7 @@ class GetHandler(BaseHTTPRequestHandler):
         user=Usuario()
         global users_list
         global ip_list
-        print(user_list)
+        print(users_list)
         ip_list=[]
         while True:
             listas=user.getUsers()

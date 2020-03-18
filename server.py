@@ -6,7 +6,7 @@ from cliente import *
 from datetime import datetime
 import threading
 
-ip_server = "10.128.0.3"
+ip_server = "104.154.208.122"
 
 class GetHandler(BaseHTTPRequestHandler):
     global message_list

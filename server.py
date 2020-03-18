@@ -122,6 +122,6 @@ class GetHandler(BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
     from http.server import HTTPServer
-    server = HTTPServer((ip_server, 8080), GetHandler)
+    server = HTTPServer((ip_server, 80), GetHandler)
     print("SERVIDOR CORRIENDO....")
     server.serve_forever()
